@@ -133,6 +133,14 @@ System.out.println("You clicked me!");
        MainPane.setCenter(loader.load());
        stage.show();
     }
+        @FXML
+    void contact(ActionEvent event) {
+System.out.println("You clicked me!");
+    FXMLloader object =new FXMLloader();
+    Pane view = object.getPage("contactus");
+    MainPane.setCenter(view);
+    }
+    
     
     /**
      * Initializes the controller class.

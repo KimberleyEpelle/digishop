@@ -94,10 +94,10 @@ public class ProfileController implements Initializable {
                     stage.setScene(scene);
                     stage.setTitle("Admin Page");
                     stage.show();}else{
-           FXMLLoader loader = new FXMLLoader(LoginPageController.class.getResource("/fxml/CashierMain.fxml"));
+           FXMLLoader loader = new FXMLLoader(LoginPageController.class.getResource("/fxml/Cashierdashboard.fxml"));
                 Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
                 Scene scene = new Scene(loader.load());
-                    hu.unideb.inf.controller.CashierMainController cashcontrol =loader.getController();
+                    hu.unideb.inf.controller.CashierdashboardController cashcontrol =loader.getController();
                     cashcontrol.show(username.getText());
                     stage.setScene(scene);
                     stage.setTitle("Cashier Page");

@@ -22,6 +22,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+import javax.swing.JOptionPane;
 
 /**
  * FXML Controller class
@@ -80,6 +81,7 @@ Date currentdate=new Date();
                if(cat.getCatName().equals(category.getValue())){
                cat.getProducts().add(dew);
                ((JPAproductDAO)aDAO).saveCategory(cat);
+             JOptionPane.showMessageDialog(null, "New product added");
                found=true;
                }
                 }
@@ -89,7 +91,7 @@ Date currentdate=new Date();
               red.getProducts().add(dew);
               ((JPAproductDAO)aDAO).saveCategory(red);
               
-              
+              JOptionPane.showMessageDialog(null, "New product added");
          
          }
        }
@@ -101,9 +103,8 @@ try (ProductDAO aDAO= new JPAproductDAO()){
         List<AddProducts> aList =aDAO.getProducts();
            for (AddProducts prod: aList ){
                if(prod.getName().equals(pname.getText())){
-                   aDAO.deleteProduct(prod);
-              
-               }
+                  aDAO.deleteProduct(prod);
+              }
                   System.out.println(prod);
             }
            }
@@ -132,24 +133,20 @@ try (ProductDAO aDAO= new JPAproductDAO()){
 
     @FXML
     void updateProd(ActionEvent event) throws Exception {
-    AddProducts dew= new AddProducts();
-       dew.setName(pname.getText());
-       dew.setDescription(pdescription.getText());
-       dew.setPrice(Double.parseDouble(price.getText()));
-       dew.setQuantity(Integer.parseInt(pQuantity.getText()));
-       dew.setEntryDate(currentdate);
-       
+       boolean found=false;
        try (ProductDAO aDAO= new JPAproductDAO()){
-       aDAO.saveProduct(dew);
+       List<AddProducts> aList =aDAO.getProducts();
        List<Category> kList =aDAO.getCategory();
-         for (Category cat: kList){
-               if(cat.getCatName().equals(category.getValue())){
-               cat.getProducts().add(dew);
-               ((JPAproductDAO)aDAO).saveCategory(cat);
-               }
-                }
+        for (AddProducts prod: aList){
+       if(prod.getName().equalsIgnoreCase(pname.getText())){
+           prod.setDescription(pdescription.getText());
+           prod.setName(pname.getText());
+           prod.setPrice(Double.parseDouble(price.getText()));
+           prod.setQuantity(Integer.parseInt(pQuantity.getText()));
+           aDAO.updateProduct(prod);
+           JOptionPane.showMessageDialog(null, "Product updated");
+       }}}
        }
-    }
     /**
      * Initializes the controller class.
      */

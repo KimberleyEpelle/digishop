@@ -1,6 +1,7 @@
 hu\unideb\inf\controller\adminMainController.class
 hu\unideb\inf\controller\CashierdashboardController.class
 hu\unideb\inf\model\Cashier.class
+hu\unideb\inf\controller\ContactController.class
 hu\unideb\inf\controller\LoginPageController.class
 hu\unideb\inf\model\Sales.class
 hu\unideb\inf\controller\FXMLloader.class
