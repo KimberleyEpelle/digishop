@@ -38,7 +38,7 @@ final EntityManager entityManager = entityManagerFactory.createEntityManager();
     }
     
       public void saveUser(Login_User a) {
-   entityManager.getTransaction().begin();
+        entityManager.getTransaction().begin();
         entityManager.persist(a);
         entityManager.getTransaction().commit();
     }
