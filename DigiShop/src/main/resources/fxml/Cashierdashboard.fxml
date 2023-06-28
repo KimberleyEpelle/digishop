@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="MainPane" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.controller.CashierdashboardController">
+   <left>
+      <VBox prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane prefHeight="509.0" prefWidth="152.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="67.60000610351562" minWidth="10.0" prefWidth="42.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.0" minWidth="10.0" prefWidth="158.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="Products" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #0598ff;" text="Products" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#exitbtn" style="-fx-border-color: #0598ff;" text="Exit" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@Imagesforcashierpage/Dashboard.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="6">
+                     <image>
+                        <Image url="@Imagesforcashierpage/Products.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="21.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@Imagesforcashierpage/Search.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@Imagesforcashierpage/User.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="cashname" text="Name" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#checkout" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #0598ff;" text="Checkout" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#viewproducts" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #0598ff;" text="View" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Label text="Product" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="username" prefHeight="24.0" prefWidth="151.0" promptText="Username" style="-fx-background-color: #ffffff; -fx-border-color: #0598ff; -fx-border-width: #0598ff;" text="Search..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Text fill="#0598ff" strokeType="OUTSIDE" strokeWidth="0.0" text="DIGISHOP" textAlignment="CENTER" wrappingWidth="151.20000000000005" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Button mnemonicParsing="false" onAction="#Dashboard" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #0598ff;" text="Dashboard" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#viewprofile" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #0598ff;" text="My Profile" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="52.0" layoutY="362.0" mnemonicParsing="false" onAction="#contact" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #0598ff;" text="Contact Us" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane fx:id="dash" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="41.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="top sales :" textAlignment="CENTER" wrappingWidth="122.40000000000009">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="fseller" layoutX="61.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1: Iphone12" wrappingWidth="122.40000000000009">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="sseller" layoutX="61.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2: sony Playstation 5" wrappingWidth="178.4000000000001">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="tseller" layoutX="61.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3: Galaxy S21" wrappingWidth="143.9999755859376">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="35.0" fitWidth="45.0" layoutX="24.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagesforcashierpage/topseller.png" />
+               </image>
+            </ImageView>
+            <BarChart fx:id="Chart" layoutX="18.0" layoutY="180.0" prefHeight="330.0" prefWidth="540.0" title="Best seller">
+              <xAxis>
+                <CategoryAxis label="Devices" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis label="Sold" side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

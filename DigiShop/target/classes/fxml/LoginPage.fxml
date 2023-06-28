@@ -9,9 +9,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.controller.LoginPageController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.controller.LoginPageController">
    <left>
-      <AnchorPane prefHeight="500.0" prefWidth="283.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="500.0" prefWidth="283.0" style="-fx-background-color: #0da2ff;" BorderPane.alignment="CENTER">
          <children>
             <Text fill="WHITE" layoutX="54.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DIGISHOP">
                <font>
@@ -20,7 +20,7 @@
             </Text>
             <Text fill="WHITE" layoutX="20.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supermarket Inventory Systems">
                <font>
-                  <Font size="18.0" />
+                  <Font name="Cambria" size="18.0" />
                </font>
             </Text>
          </children></AnchorPane>
@@ -30,19 +30,20 @@
          <children>
             <TextField fx:id="username" layoutX="142.0" layoutY="198.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
             <PasswordField fx:id="password" layoutX="142.0" layoutY="262.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0598ff;" />
-            <Button layoutX="240.0" layoutY="342.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="106.0" style="-fx-background-color: #0598ff;" text="Sign Up" />
-            <Button layoutX="102.0" layoutY="342.0" mnemonicParsing="false" onAction="#pushedLogin" prefHeight="34.0" prefWidth="106.0" style="-fx-background-color: #0598ff;" text="Login" />
-            <Hyperlink layoutX="179.0" layoutY="456.0" text="Forgot Password?">
+            <Button layoutX="164.0" layoutY="342.0" mnemonicParsing="false" onAction="#pushedLogin" prefHeight="34.0" prefWidth="106.0" style="-fx-background-color: #0598ff;" text="Login" textFill="WHITE">
                <font>
-                  <Font size="11.0" />
+                  <Font name="Cambria Bold" size="14.0" />
+               </font></Button>
+            <Hyperlink layoutX="179.0" layoutY="456.0" text="Forgot Password?" textFill="#0598ff">
+               <font>
+                  <Font name="Cambria" size="11.0" />
                </font>
             </Hyperlink>
-            <Text fill="#0598ff" layoutX="137.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login">
+            <Text fill="#0598ff" layoutX="137.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER LOGIN">
                <font>
-                  <Font size="34.0" />
+                  <Font name="Cambria" size="34.0" />
                </font>
             </Text>
-            <Button layoutX="328.0" layoutY="14.0" minWidth="53.0" mnemonicParsing="false" onMouseExited="#close" prefHeight="37.0" prefWidth="73.0" text="Close" />
          </children>
       </AnchorPane>
    </right>

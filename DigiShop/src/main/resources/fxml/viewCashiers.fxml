@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="hu.unideb.inf.controller.ViewCashiersController">
+   <children>
+      <TableView fx:id="cashview" layoutX="25.0" layoutY="55.0" prefHeight="239.0" prefWidth="576.0">
+        <columns>
+          <TableColumn fx:id="empid" prefWidth="75.0" text="Employee id" />
+          <TableColumn fx:id="empname" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="empsname" prefWidth="75.0" text="Surname" />
+            <TableColumn fx:id="emprank" prefWidth="70.0" text="Position" />
+            <TableColumn fx:id="empgender" prefWidth="70.0" text="Gender" />
+            <TableColumn fx:id="empcity" prefWidth="67.0" text="City" />
+            <TableColumn fx:id="empdate" prefWidth="135.0" text="Employment Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

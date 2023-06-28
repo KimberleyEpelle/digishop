@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Phones">
+         <content>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </content>
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="161.0" fitWidth="91.0" layoutX="40.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Productsimage/iphone12.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="157.0" fitWidth="120.0" layoutX="294.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Productsimage/iphone12pro.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="204.0" fitWidth="138.0" layoutX="591.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Productsimage/12promax.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="213.0" fitWidth="132.0" layoutX="14.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Productsimage/note10.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="216.0" fitWidth="115.0" layoutX="308.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Productsimage/s21.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="52.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Iphone12" />
+                  <Text layoutX="312.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Iphone12 Pro" />
+                  <Text layoutX="308.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="samsung galaxy s21" />
+                  <Text layoutX="57.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Galaxy Note10" />
+                  <Text layoutX="607.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Iphone12 ProMAx" />
+                  <Button layoutX="717.0" layoutY="504.0" mnemonicParsing="false" text="Back to Dashboard" />
+               </children>
+            </AnchorPane>
+         </content></Tab>
+    <Tab text="Laptops">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="111.0" fitWidth="189.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Productsimage/macbook%20air.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="143.0" fitWidth="218.0" layoutX="5.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Productsimage/Microsoft%20Surface%203.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="179.0" fitWidth="177.0" layoutX="304.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Productsimage/macbookpro2020.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="336.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MacBook Pro 2020" />
+                  <Text layoutX="63.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surface Laptop 3" />
+                  <Text layoutX="53.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MacBook Air 2020" />
+                  <Button layoutX="717.0" layoutY="505.0" mnemonicParsing="false" text="Back to Dashboard" />
+               </children>
+            </AnchorPane>
+         </content></Tab>
+      <Tab text="Camera">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane layoutX="14.0" layoutY="30.0" prefHeight="541.6" prefWidth="850.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="142.0" fitWidth="219.0" layoutX="70.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../Desktop/finall/Canon%20EOS%20200D.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="185.0" fitWidth="211.0" layoutX="391.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../Desktop/finall/NIKON%20D3500.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="166.0" fitWidth="218.0" layoutX="62.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../Desktop/finall/Sony%20HX400V.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="117.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sony HX400V" />
+                        <Text layoutX="432.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIKON D3500" textAlignment="CENTER" />
+                        <Text layoutX="108.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Canon EOS 200D" />
+                        <Button layoutX="718.0" layoutY="505.0" mnemonicParsing="false" text="Back to Dashboard" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content></Tab>
+      <Tab text="gaming console">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="176.0" fitWidth="129.0" layoutX="51.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Desktop/products%20pic/ps5.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="219.0" fitWidth="199.0" layoutX="51.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Desktop/products%20pic/Xbox%20Series%20X.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="221.0" fitWidth="156.0" layoutX="390.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Desktop/series%20s.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="266.0" fitWidth="351.0" layoutX="286.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Desktop/ps4.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="65.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Playstation 5" />
+                  <Text layoutX="422.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xbox series S" />
+                  <Text layoutX="403.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Playstation 4" />
+                  <Text layoutX="75.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xbox series X" />
+                  <Button layoutX="718.0" layoutY="505.0" mnemonicParsing="false" text="Back to Dashboard" />
+               </children>
+            </AnchorPane>
+         </content></Tab>
+  </tabs>
+</TabPane>
