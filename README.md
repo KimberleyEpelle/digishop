@@ -32,8 +32,4 @@ It tracks top-selling products, the employees responsible for each sale, and gen
 ![cashierDashboard](https://github.com/KimberleyEpelle/digishop/assets/80205441/0e60ecfd-b885-45e5-8031-dae619aafbd7)
 ![AdminPage](https://github.com/KimberleyEpelle/digishop/assets/80205441/23d928bb-7a6a-412d-b56f-5c75301915c8)
 ![checkoutpage](https://github.com/KimberleyEpelle/digishop/assets/80205441/66238c34-45d0-423f-9379-c5ed411f6b35)
----
-## 🧾 Author
-**Kimberley Epelle**  
-Master’s student in Cybersecurity — Université Libre de Bruxelles  
-[LinkedIn](https://linkedin.com/in/kimberley-epelle)
+
